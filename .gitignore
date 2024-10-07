@@ -1,0 +1,11 @@
+# Ignore Visual Studio Code files and folders
+.vscode/
+*.code-workspace
+
+# Ignore temporary files created by VSCode
+*.tmp
+*.bak
+*.log
+
+# Ensure to not ignore .lc files specifically
+!*.lc*
