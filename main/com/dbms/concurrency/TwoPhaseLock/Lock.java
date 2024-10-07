@@ -1,10 +1,19 @@
 package main.com.dbms.TwoPhaseLock;
 class Lock {
-    String transactionId;
-    LockType type;
 
-    Lock(String transactionId, LockType type) {
+    private LockType lockType;
+    private String transactionId;
+
+    public Lock(LockType lockType, String transactionId) {
+        this.lockType = lockType;
         this.transactionId = transactionId;
-        this.type = type;
+    }
+
+    public LockType getLockType() {
+        return lockType;
+    }
+
+    public String getTransactionId() {
+        return transactionId;
     }
 }
